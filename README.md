@@ -1,5 +1,20 @@
 # Coding Interview University
+# Simple Data Management System in Python
+def add_data(data_list, name, role):
+    entry = {"Name": name, "Role": role}
+    data_list.append(entry)
+    print(f"Success: {name} added!")
 
+def show_all(data_list):
+    print("\n--- Current Records ---")
+    for item in data_list:
+        print(f"Name: {item['Name']} | Role: {item['Role']}")
+
+# Main Program
+records = []
+add_data(records, "Rajen", "Python Developer")
+add_data(records, "Sololearn", "Learning Platform")
+show_all(records)
 > I originally created this as a short to-do list of study topics for becoming a software engineer,
 > but it grew to the large list you see today. After going through this study plan, [I got hired
 > as a Software Development Engineer at Amazon](https://startupnextdoor.com/ive-been-acquired-by-amazon/?src=ciu)!
